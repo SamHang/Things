@@ -1,0 +1,15 @@
+player.onChat("Cube", function() {
+    player.say("Cube Placement Begin")
+
+    for (let x=1; x <=10; x++)
+    for (let y=1; y<=10; y++)
+    for (let z=1; z<=10; z++)
+    blocks.place(OBSIDIAN, pos(x,y,z))
+
+    for (let x=2; x<=9; x++)
+    for (let y=2; y<=9; y++)
+    for (let z=2; z<=9; z++)
+    blocks.place(AIR, pos(x,y,z))
+
+    player.say("Cube Placement End")
+})
