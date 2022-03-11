@@ -1,0 +1,31 @@
+let myPosition = positions.groundPosition(pos(0,0,0))
+
+let length=5
+let height=5
+let width=5
+let wall_thickness=1
+
+player.onChat("Cube", function() {
+    player.say("Cube Placement Begin");
+
+    for (let x=1; x <=length; x++) {
+        for (let y=1; y<=height; y++) {
+         for (let z=1; z<=width; z++) {
+              
+              let newPos = positions.add(myPosition, pos(x,y,z));
+              blocks.place(OBSIDIAN, world(newPos.getValue(Axis.X) ,newPos.getValue(Axis.Y), newPos.getValue(Axis.Z)))
+            }         
+        }
+    }     
+    for (let x=2; x<=length-wall_thickness; x++){
+    for (let y=2; y<=height-wall_thickness; y++){
+    for (let z=2; z<=width-wall_thickness; z++){
+    let newPos = positions.add(myPosition, pos(x,y,z));
+              blocks.place(AIR, world(newPos.getValue(Axis.X) ,newPos.getValue(Axis.Y), newPos.getValue(Axis.Z)))
+
+    }
+    }
+    }
+    player.say("Cube Placement End")
+})
+
