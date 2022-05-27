@@ -1,0 +1,53 @@
+
+for (let i = 0; i < 2; i++) {
+
+}
+BuildFarm()
+function doSomething() {
+
+}
+player.onChat("farmwheat") function BuildFarm() {
+
+
+	agent.teleportToPlayer()
+
+    agent.destroy(DOWN)
+    agent.setItem(WATER, 1, 1)
+    agent.place(DOWN)
+    agent.move(LEFT, 4)
+    agent.move(BACK, 5)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+player.say("Farm Built")
+})
+
+player.onChat
