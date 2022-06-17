@@ -1,9 +1,8 @@
 let x = CARROT
 
-
-
+//building
 function BuildWheatFarm() {
-agent.teleportToPlayer()
+agent.teleportToPlayer() //teleport change
 agent.setSlot(1)
     agent.destroy(DOWN)
     agent.setItem(WATER_BUCKET, 1, 1)
@@ -14,8 +13,8 @@ agent.setSlot(1)
     agent.setItem(CHEST, 1, 1)
     agent.place(LEFT)
     agent.move(FORWARD, 2)
-for (let i = 0; i < 4; i++) {
 
+for (let i = 0; i < 4; i++) {
 for (let i = 0; i < 9; i++) {
 agent.till(FORWARD)
 agent.move(FORWARD, 1)
@@ -44,7 +43,162 @@ agent.move(FORWARD, 1)
 
 agent.move(LEFT, 4)
 agent.move(BACK, 4)
+agent.move(FORWARD, 10)
+ agent.destroy(DOWN)
+    agent.setItem(WATER_BUCKET, 1, 1)
+    agent.place(DOWN)
+    agent.move(LEFT, 4)
+    agent.move(BACK, 5)
+
+for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(LEFT, 10)
+ agent.destroy(DOWN)
+    agent.setItem(WATER_BUCKET, 1, 1)
+    agent.place(DOWN)
+    agent.move(LEFT, 4)
+    agent.move(BACK, 5)
+
+for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(BACK,10)
+ agent.destroy(DOWN)
+    agent.setItem(WATER_BUCKET, 1, 1)
+    agent.place(DOWN)
+    agent.move(LEFT, 4)
+    agent.move(BACK, 5)
+
+for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+for (let i = 0; i < 9; i++) {
+agent.till(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(RIGHT, 10)
+ agent.destroy(DOWN)
+    agent.setItem(WATER_BUCKET, 1, 1)
+    agent.place(DOWN)
+    agent.move(LEFT, 4)
+    agent.move(BACK, 5)
+
+
 player.say("Farm Built")
+//planting + fertilizer
+for (let i=0; i<10; i++){
+
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(x, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(FORWARD, 10)
 
 for (let i=0; i<10; i++){
 
@@ -83,6 +237,85 @@ agent.move(FORWARD, 1)
 
 agent.move(LEFT, 4)
 agent.move(BACK, 4)
+agent.move(RIGHT, 10)
+
+for (let i=0; i<10; i++){
+
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(x, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(BACK, 10)
+
+for (let i=0; i<10; i++){
+
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(x, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(LEFT, 10)
 
 
 for (let i=0; i<4; i++) {
@@ -121,11 +354,125 @@ agent.move(FORWARD, 1)
 
 agent.move(LEFT, 4)
 agent.move(BACK, 4)
+agent.move(FORWARD, 10)
 
+for (let i=0; i<4; i++) {
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(BONE_MEAL, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
 }
 
 
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
 
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(RIGHT, 10)
+
+for (let i=0; i<4; i++) {
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(BONE_MEAL, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(BACK, 10)
+
+for (let i=0; i<4; i++) {
+agent.move(LEFT, 4)
+agent.move(BACK, 5)
+agent.setItem(BONE_MEAL, 64, 1)
+agent.setSlot(1)
+for (let i = 0; i < 4; i++) {
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Right)
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+agent.move(FORWARD, 1)
+agent.turn(TurnDirection.Left)
+}
+
+
+for (let i = 0; i < 9; i++) {
+agent.place(FORWARD)
+agent.move(FORWARD, 1)
+}
+
+agent.move(LEFT, 4)
+agent.move(BACK, 4)
+agent.move(LEFT, 10)
+}
+
+
+//harvest
 agent.move(LEFT, 4)
 agent.move(BACK, 5)
 
@@ -204,7 +551,12 @@ agent.interact(LEFT)
 agent.move(FORWARD, 2)
 }
 }
-
+}
+}
+}
+}
+}
+}
 function something () {
     agent.teleportToPlayer()
     agent.getItemCount(1)
@@ -217,3 +569,4 @@ agent.drop(FORWARD, 1, 64)
 
 
 player.onChat("wheatfarm", BuildWheatFarm )
+
